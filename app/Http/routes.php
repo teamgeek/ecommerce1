@@ -94,3 +94,45 @@ Route::get('/tac',[
     'as'=>'tac',
     'uses'=>'ControlleurTac@afficherTac'
 ]);
+
+//afficher page index administrateur
+Route::get('/admin',[
+    'as'=>'administration',
+    'uses'=>'ControlleurAccueil@afficherIndex'
+]);
+
+//afficher articles
+Route::get('/admin article',[
+    'as'=>'article',
+    'uses'=>'ControlleurArticle@afficherArticle'
+]);
+
+//afficher categorie
+Route::get('/admin categorie',[
+    'as'=>'categorie',
+    'uses'=>'ControlleurCategorie@afficherCategorie'
+]);
+
+//afficher client
+Route::get('/admin client',[
+    'as'=>'client',
+    'uses'=>'ControlleurClient@afficherClient'
+]);
+
+//afficher commande
+Route::get('/admin commande',[
+    'as'=>'commande',
+    'uses'=>'ControlleurCommande@afficherCommande'
+]);
+
+//afficher historique
+Route::get('/admin historiquevente',[
+    'as'=>'historiquevente',
+    'uses'=>'ControlleurHistoriqueVente@afficherHistoriqueVente'
+]);
+
+//afficher offre special
+Route::get('/admin offreSpecial',[
+    'as'=>'offrespecial',
+    'uses'=>'ControlleurOffreSpecial@afficherOffre'
+]);
